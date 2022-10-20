@@ -1,0 +1,479 @@
+/*
+ |--------------------------------------------------------------------------
+ | TailwindCSS Directives
+ |--------------------------------------------------------------------------
+ |
+ | Import TailwindCSS directives and swipe out at build-time with all of
+ | the styles it generates based on your configured design system.
+ |
+ | Please check this link for more details:
+ | https://tailwindcss.com/docs/installation#include-tailwind-in-your-css
+ |
+ */
+@import "./_tailwind.css";
+
+/*
+   |--------------------------------------------------------------------------
+   | Colors
+   |--------------------------------------------------------------------------
+   |
+   | Import all fonts used in the template, the font configuration can be
+   | seen in "tailwind.config.js".
+   |
+   | Please check this link for more details:
+   | https://tailwindcss.com/docs/theme
+   |
+   */
+@import "./_colors.css";
+
+/*
+   |--------------------------------------------------------------------------
+   | Fonts
+   |--------------------------------------------------------------------------
+   |
+   | Import all fonts used in the template, the font configuration can be
+   | seen in "tailwind.config.js".
+   |
+   | Please check this link for more details:
+   | https://tailwindcss.com/docs/theme
+   |
+   */
+@import "./fonts/_roboto.css";
+
+/*
+   |--------------------------------------------------------------------------
+   | Mixins
+   |--------------------------------------------------------------------------
+   |
+   | Import helper mixins.
+   |
+   */
+@import "@left4code/tw-starter/dist/css/mixins/_media.css";
+
+/*
+   |--------------------------------------------------------------------------
+   | 3rd Party Libraries
+   |--------------------------------------------------------------------------
+   |
+   | Import 3rd party library CSS/SASS files.
+   |
+   */
+@import "@left4code/tw-starter/dist/css/_breadcrumb.css";
+@import "@left4code/tw-starter/dist/css/_accordion.css";
+@import "@left4code/tw-starter/dist/css/_alert.css";
+@import "@left4code/tw-starter/dist/css/_btn.css";
+@import "@left4code/tw-starter/dist/css/_dropdown.css";
+@import "@left4code/tw-starter/dist/css/_file.css";
+@import "@left4code/tw-starter/dist/css/_form-reset.css";
+@import "@left4code/tw-starter/dist/css/_form-check.css";
+@import "@left4code/tw-starter/dist/css/_form-control.css";
+@import "@left4code/tw-starter/dist/css/_form-help.css";
+@import "@left4code/tw-starter/dist/css/_form-inline.css";
+@import "@left4code/tw-starter/dist/css/_form-label.css";
+@import "@left4code/tw-starter/dist/css/_form-select.css";
+@import "@left4code/tw-starter/dist/css/_image-fit.css";
+@import "@left4code/tw-starter/dist/css/_input-group.css";
+@import "@left4code/tw-starter/dist/css/_intro.css";
+@import "@left4code/tw-starter/dist/css/_modal.css";
+@import "@left4code/tw-starter/dist/css/_pagination.css";
+@import "@left4code/tw-starter/dist/css/_progress.css";
+@import "@left4code/tw-starter/dist/css/_scrollbar.css";
+@import "@left4code/tw-starter/dist/css/_tab.css";
+@import "@left4code/tw-starter/dist/css/_table.css";
+@import "@left4code/tw-starter/dist/css/_typing-dots.css";
+@import "@left4code/tw-starter/dist/css/_zoom-in.css";
+@import "@left4code/tw-starter/dist/css/_box.css";
+@import "highlight.js/styles/github.css";
+@import "tippy.js/dist/tippy.css";
+@import "tippy.js/themes/light.css";
+@import "tippy.js/dist/svg-arrow.css";
+@import "tippy.js/animations/shift-away.css";
+@import "toastify-js/src/toastify.css";
+@import "dropzone/dist/dropzone.css";
+@import "zoom-vanilla.js/dist/zoom.css";
+@import "tabulator-tables/dist/css/tabulator.css";
+@import "tom-select/dist/css/tom-select.css";
+@import "tiny-slider/dist/tiny-slider.css";
+
+/*
+ |--------------------------------------------------------------------------
+ | Components
+ |--------------------------------------------------------------------------
+ |
+ | Import CSS/SCSS components.
+ |
+ */
+@import "./components/_global.css";
+@import "./components/_login.css";
+@import "./components/_table-report.css";
+@import "./components/_report-chart.css";
+@import "./components/_search.css";
+@import "./components/_notification.css";
+@import "./components/_report-box.css";
+@import "./components/_report-box-2.css";
+@import "./components/_report-box-3.css";
+@import "./components/_report-box-4.css";
+@import "./components/_content.css";
+@import "./components/_top-nav.css";
+@import "./components/_side-nav.css";
+@import "./components/_breadcrumb.css";
+@import "./components/_toastify.css";
+@import "./components/_toastify-content.css";
+@import "./components/_lucide-icon.css";
+@import "./components/_top-bar-boxed.css";
+@import "./components/_mobile-menu.css";
+@import "./components/_inbox-filter.css";
+@import "./components/_inbox.css";
+@import "./components/_chat.css";
+@import "./components/_chat-dropdown.css";
+@import "./components/_news.css";
+@import "./components/_pricing-tabs.css";
+@import "./components/_error-page.css";
+@import "./components/_search-result.css";
+@import "./components/_notification-content.css";
+@import "./components/_report-maps.css";
+@import "./components/_pos-dropdown.css";
+@import "./components/_post.css";
+@import "./components/_litepicker.css";
+@import "./components/_tiny-slider.css";
+@import "./components/_tippy.css";
+@import "./components/_tabulator.css";
+@import "./components/_tom-select.css";
+@import "./components/_dropzone.css";
+@import "./components/_ckeditor.css";
+@import "./components/_zoom-vanilla.css";
+@import "./components/_dark-mode-switcher.css";
+@import "./components/_hljs.css";
+@import "./components/_source-preview.css";
+@import "./components/_full-calendar.css";
+@import "./components/_pristine.css";
+
+.modal .modal-dialog.modal-sl-toMenu {
+  width: 85% !important;
+}
+
+.modal .modal-dialog.modal-xxl {
+  width: 90% !important;
+  /* min-height: 600vh !important; */
+}
+
+.modal .modal-dialog.modal-sl-10 {
+  width: 10% !important;
+}
+.modal .modal-dialog.modal-sl-20 {
+  width: 20% !important;
+}
+.modal .modal-dialog.modal-sl-30 {
+  width: 30% !important;
+}
+.modal .modal-dialog.modal-sl-40 {
+  width: 40% !important;
+}
+.modal .modal-dialog.modal-sl-50 {
+  width: 50% !important;
+}
+.modal .modal-dialog.modal-sl-55 {
+  width: 55% !important;
+}
+.modal .modal-dialog.modal-sl-60 {
+  width: 60% !important;
+}
+.modal .modal-dialog.modal-sl-65 {
+  width: 65% !important;
+}
+.modal .modal-dialog.modal-sl-70 {
+  width: 70% !important;
+}
+.modal .modal-dialog.modal-sl-75 {
+  width: 75% !important;
+}
+.modal .modal-dialog.modal-sl-80 {
+  width: 80% !important;
+}
+.modal .modal-dialog.modal-sl-85 {
+  width: 85% !important;
+}
+.modal .modal-dialog.modal-sl-90 {
+  width: 90% !important;
+}
+.modal .modal-dialog.modal-sl-95 {
+  width: 95% !important;
+}
+.modal .modal-dialog.modal-sl-100 {
+  width: 100% !important;
+}
+
+.dp__cancel {
+  color: gray;
+}
+.dp__select {
+  color: white;
+  background-color: #164e63;
+  border: 1px solid #164e63;
+}
+
+.toastify-avatar {
+  margin-bottom: 0px !important;
+  margin-top: -2px !important;
+  margin-left: 0px !important;
+  margin-right: 10px !important;
+}
+
+.toastify {
+  display: flex !important;
+}
+
+.tom-select .ts-input {
+  cursor: pointer;
+}
+
+#booleanSwitch {
+  @apply border-red-700 bg-red-700;
+  &:checked {
+    @apply border-green-700 bg-green-700;
+  }
+}
+
+.form-check-input[type="checkbox"] {
+  @apply border-primary;
+  &:checked {
+    @apply border-green-700 bg-green-700;
+  }
+}
+.form-switch .form-check-input{
+  @apply border-red-700 bg-red-700;
+  &:checked {
+    @apply border-green-700 bg-green-700;
+  }
+}
+.form-switch .form-check-input:checked::before {
+  background-color: white;
+} 
+.form-switch .form-check-input:before {
+
+  background-color: white;
+} 
+
+#labelsScroll::-webkit-scrollbar {
+  /* display: none; */
+  width: 10px;
+}
+/* Track */
+#labelsScroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+#labelsScroll::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+}
+
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #2980b9;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #3498db;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  color: #fff;
+  font: 700 18px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+  top: -10px;
+  left: 0px;
+}
+
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+
+/* top right*/
+.ribbon-top-right {
+  top: -10px;
+  right: -10px;
+}
+
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+
+.ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+
+.ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+
+.ribbon-top-right span {
+  left: -25px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+
+/* bottom left*/
+.ribbon-bottom-left {
+  bottom: -10px;
+  left: -10px;
+}
+
+.ribbon-bottom-left::before,
+.ribbon-bottom-left::after {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.ribbon-bottom-left::before {
+  bottom: 0;
+  right: 0;
+}
+
+.ribbon-bottom-left::after {
+  top: 0;
+  left: 0;
+}
+
+.ribbon-bottom-left span {
+  right: -25px;
+  bottom: 30px;
+  transform: rotate(225deg);
+}
+
+/* bottom right*/
+.ribbon-bottom-right {
+  bottom: -10px;
+  right: -10px;
+}
+
+.ribbon-bottom-right::before,
+.ribbon-bottom-right::after {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.ribbon-bottom-right::before {
+  bottom: 0;
+  left: 0;
+}
+
+.ribbon-bottom-right::after {
+  top: 0;
+  right: 0;
+}
+
+.ribbon-bottom-right span {
+  left: -25px;
+  bottom: 30px;
+  transform: rotate(-225deg);
+}
+
+/*ScrollBar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/*vue-select*/
+.vs__search {
+  cursor: pointer;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  padding-top: 3.5px !important;
+  padding-bottom: 2.5px !important;
+  margin: 0px !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-color: white !important;
+  background-color: transparent !important;
+}
+.vs__search:focus {
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-color: white !important;
+  box-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width))
+    var(--tw-ring-color) white !important;
+}
+.style-chooser .vs__search::placeholder,
+.style-chooser .vs__dropdown-toggle,
+.style-chooser .vs__dropdown-menu {
+  color: #303030 !important;
+  font-family: Roboto !important;
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+}
+
+.style-chooser .vs__clear,
+.style-chooser .vs__open-indicator {
+  fill: rgb(22, 78, 99);
+}
+
+:root {
+  --vs-dropdown-option--active-bg: rgb(22, 78, 99);
+  --vs-search-input-color: #5e5d5d;
+  --vs-dropdown-option-padding: 10px 5px;
+}
